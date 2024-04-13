@@ -1,0 +1,35 @@
+{
+  "name": "dotext-cli",
+  "version": "0.0.0",
+  "description": "A simple dotext command line implementation, powered by Demo Macro.",
+  "private": true,
+  "scripts": {
+    "build": "cargo build --release",
+    "check": "cargo clippy --fix --no-deps --allow-dirty --allow-staged",
+    "format": "cargo fmt --all && prettier --write --list-different . --ignore-path .gitignore",
+    "postinstall": "githooks install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/dotext-cli.git"
+  },
+  "keywords": [
+    "dotext"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/dotext-cli/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/dotext-cli#readme",
+  "devDependencies": {
+    "@funish/githooks": "0.0.5",
+    "@funish/githooks-config": "0.0.2",
+    "@funish/lint": "0.0.2",
+    "prettier": "3.2.5"
+  }
+}

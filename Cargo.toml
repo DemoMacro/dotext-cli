@@ -1,0 +1,13 @@
+[package]
+name = "dotext-cli"
+version = "0.0.0"
+edition = "2021"
+authors = ["Demo Macro <abc@imst.xyz>"]
+description = "A simple dotext command line implementation, powered by Demo Macro."
+license = "MIT"
+repository = "https://github.com/DemoMacro/dotext-cli"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotext = "0.1.1"
